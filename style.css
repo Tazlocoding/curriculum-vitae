@@ -4,5 +4,98 @@
 	box-sizing: border-box;
 }
 body{
+	justify-content: center;
+	width: 72vw;
+	height: 168vh;
+	margin: auto;
+  border: .5px solid grey;
+  font-family: sans-serif;
+}
+
+.container {
+	display: flex;
+}
+
+  /* ____partie gauche__________________*/
+#left {
+	background-color: rgb(248,199,7);
+	width: 24vw;
+  height: 168vh;
+  	
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  height: 18vw;
+  
+}
+
+img {
+	width: 20vh;
+	height: 20vh;
+  border-radius: 50%;
+  align-self: center;
 
 }
+
+.left {
+  display: flex;
+	width: 24vw;
+	height: 3vw;
+  background: rgb(68,65,60);
+  color: (248,199,7);
+  justify-content: center;
+  align-items: center;
+}
+
+.top,.middle,.bottom {
+  color: rgb(248,199,7);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.leftContact  {
+  font-size: 10px;
+  padding: 3vh;
+  
+}
+
+.about p {
+  font-size: 10px;
+  padding: 3vh;
+  margin-bottom: 26vw;
+  text-align: justify;
+}
+
+
+.logo {
+   width: 6vh;
+   height: 6vh;
+   border-radius: 50%;
+   border: 1px solid rgb(68,65,60); 
+  
+}
+
+.logo-left {
+  display: flex;
+  height: 6vw;
+  justify-content: space-around;
+  
+  
+}
+
+
+
+  
+
+
+
+
+
+
+
+
