@@ -7,34 +7,28 @@
     <meta property="og:title" content="Mon cv" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="http://www.example.com/" />
-    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:image" content="http://example.com/profil.jpg" />
     <meta property="og:description" content="Présentation de mon parcour par mon cv et de mon avenir professionnel" />
     <!-- Twitter Card data -->
     <meta name="twitter:title" content="CV" />
     <meta name="twitter:description" content="Présentation de mon parcour et de mon avenir professionnel"/>
 
-    <!-- Twitter Summary card images must be at least 200x200px -->
-    <!-- Twitter Summary card images must be at least 200x200px -->
-    <meta name="twitter:image" content="http://www.example.com/image.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Daucé laurent</title>
   </head>
   <body>
     <div class="container">
       <!-- Partie gauche -->
-      <aside id="left">
-        <!--<header class="mobile">
-          <h4><span>laurent</span> daucé</h4>
-          <h5><span>Dévelo</span>ppeur web junior</h5> 
-        </header>-->
+      <aside class="asideSectionLeft">
         <!-- Partie photo -->
-        <section class="photo">
-          <img src="images/profil.JPG" alt="profil" />
+        <section class="asideSection__img">
+          <img class="asideSection__photo" src="images/profil.jpg" alt="profil" />
         </section>
         <!-- Partie contact -->
         <section >
-          <h3 class="left top">contact</h3>
-          <div class="leftContact">
+          <h3 class="asideSection__titre asideSection__color">contact</h3>
+          <div class="asideSection__contact">
             <p>Adresse<br/>
             Le clos neuf <br/>
             35420 St Georges de Rlt</p><br/>
@@ -45,30 +39,30 @@
             <p>Site web<br/>
             www.daucelaurent.fr</p><br/>
             <p>Linkedin<br/>
-            linkedin.com/in/daucé-laurent/</p>
+            /in/daucé-laurent/</p><br/>
           </div>
         </section>
         <!-- Partie A propos -->
         <section>
-          <h3 class="left middle">à propos de moi</h3>
-          <div class="about">
+          <h3 class="asideSection__titre  asideSection__color">à propos de moi</h3>
+          <div class="asideSection__texte">
           <p>
             En reconversion professionnelle, je me dirige vers le développement
             web. Actuellement je me forme avec OpenClasrooms pour apprendre le métier.
             Ayant suivi une formation découverte en Développemnt d'Application Hybride d'une durée de 5 mois.
              Motivé à l'idée de rejoindre une structure de taille humaine, je
             suis à la recherche d'expérience qui me permettrai de mettre en
-            avant mes connaissances.
+            avant mes connaissances et surtout d'apprendre.
           </p>
         </div>
         </section>
         <!-- Partie loisirs -->
-        <section>
-          <h3 class="left top">loisirs</h3>
-          <div class="logo-left">
-              <img class="logo" src="images/velo.png" alt="un cycliste" />
-              <img class="logo" src="images/walking.png" alt="un marcheur" />
-              <img class="logo" src="images/jardinage.png" alt="un jardinier"/>
+        <section class="asideLeft__section">
+          <h3 class="asideSection__titre  asideSection__color">loisirs</h3>
+          <div class="asideSection__logo">
+              <img class="asideSectionLogo" src="images/velo.png" alt="un cycliste" />
+              <img class="asideSectionLogo" src="images/walking.png" alt="un marcheur" />
+              <img class="asideSectionLogo" src="images/jardinage.png" alt="un jardinier"/>
           </div>
         </section>
       </aside>
@@ -76,87 +70,150 @@
       <!-- Partie droite -->
       <main class="right">
         <!-- Nom et métier -->
-        <header class="dekstop">
-          <h1><span>laurent</span> daucé</h1>
+        <section class="header__img">
+          <img class="header__photo" src="images/profil.jpg" alt="profil" />
+        </section>
+        <header >
+          <h1><span class="headerFirstName">laurent</span> daucé</h1>
           <h2><span>Dévelo</span>ppeur web junior</h2> 
-        </header>
+        </header>    
         <!-- Partie formation -->
         <section>
-          <div class="formation">
-          <img class="logoD" src="images/formation.png" alt="formation" />
-          <h3 class="form">formation</h3>
+          <div class="mainSection">
+          <img class="main__logo" src="images/formation.png" alt="formation" />
+          <h3 class="main__titre">formation</h3>
         </div>
           <hr>
         
-         <article class="partieFormation">
-         
-          <div class="bloc_gauche1">  
-              <p>2020<br/> A distance</p><br/>
-              <p>2019-2020<br/>Rennes</p><br/>        
-              <p>2019<br/> Fougéres</p><br/>
-              <p>2018<br/> Hamelin</p><br/>
-              <p>2009<br/> St Quentin</p><br/>
-              <p>1994<br/> Cherbourg</p><br/> 
+         <article class="articleFormation">
+
+          <div class="ligne">
+            <div class="point">
+              <div class="cercle"></div>
+            </div>
+            <div class="gauche">  
+              <p>2020<br/> A distance</p>
+            </div>
+            <div class="droite">
+              <p><span>OpenClassrooms</span><br/> Développement web</p>
+            </div>
           </div>
-          <div class="bloc_droite1">
-           
-              <p><span>OpenClassrooms</span><br/> Développement web</p><br/>
-              <p><span>Buroscope</span><br/> Développement d'Application Hybride</p><br/>
-              <p><span>CLPS</span><br/> Prestation AGEFIPH Objectif Reconversion</p><br/>
-              <p><span>Minoterie des Bois Olives</span><br/> Stage Secrétaire-comptable</p><br/>
-              <p><span>CQP</span> Conducteur de Moulin</p><br/><br/>
-              <p><span>Bac Pro EIE</span> (Equipement et installation Electrique)</p><br/>
-          
+          <div class="ligne">
+            <div class="point"></div>
+            <div class="gauche">
+              <p>2019-2020<br/>Rennes</p>
+            </div>
+            <div class="droite">
+              <p><span>Buroscope</span><br/> Développement d'Application Hybride</p>
+            </div>
+          </div>
+          <div class="ligne">
+            <div class="point"></div>
+            <div class="gauche">
+              <p>2019<br/>Fougéres&ensp;</p>
+            </div>
+            <div class="droite">
+              <p><span>CLPS</span><br/> Prestation AGEFIPH Objectif Reconversion</p>
+            </div>
+          </div>
+          <div class="ligne">
+            <div class="point"></div>
+            <div class="gauche">
+              <p>2018<br/>Hamelin&ensp;&ensp;</p>
+            </div>
+            <div class="droite">
+              <p><span>Minoterie des Bois Olives</span><br/> Stage Secrétaire-comptable</p>
+            </div>
+          </div>
+          <div class="ligne">
+            <div class="point"></div>
+            <div class="gauche">
+              <p>2009<br/>St Quentin</p>
+            </div>
+            <div class="droite">
+              <p><span>CQP</span> Conducteur de Moulin</p>
+            </div>
+          </div>
+          <div class="ligne">
+            <div class="point"></div>
+            <div class="gauche">
+              <p>1994<br/> Cherbourg</p>
+            </div>
+            <div class="droite">
+              <p><span>Bac Pro EIE</span> (Equipement et installation Electrique)</p>
+            </div>
           </div>
         </article>
         </section >
         <!-- Partie ex pro -->
         <section>
-          <div class="experience">
-          <img class="logoD" src="images/expérience.png" alt="expérience" />
-          <h3 class="expe">expérience professionnelle</h3>
+          <div class="mainSection">
+          <img class="main__logo" src="images/expérience.png" alt="expérience" />
+          <h3 class="main__titre">expérience professionnelle</h3>
           </div>
           <hr>
-
-          <article class="partieExperience">
-          <div class="bloc_gauche1">
-         
-              <p>1998-2018</p><br/>
-              <p>1997-1998</p><br/>
-              <p>1996-1997</p><br/>
-              <p>1994-1995</p><br/>
-            
-          </div>
-          <div class="bloc_droite1">
-            
-             
-              <p>Chef Meunier Minoterie des Bois Olives</p><br/>
-              <p>Syndicat Eaux potable Avranches Sud</p><br/>
-              <p>Réalisation armoire électrique</p><br/>
-              <p>Monteur machine à traire</p><br/>
-           
-          </div>
+          <article class="articleExperience">
+            <div class="ligne">
+              <div class="point">
+                <div class="cercle"></div>
+              </div>
+              <div class="gauche">
+                <p>1998-2018</p><br/>
+              </div>
+              <div class="droite">
+                <p>Chef Meunier Minoterie des Bois Olives</p><br/> 
+              </div>
+            </div>
+            <div class="ligne">
+              <div class="point"></div>
+              <div class="gauche">
+                <p>1997-1998</p><br/>
+              </div>
+              <div class="droite">
+                <p>Syndicat Eaux potable Avranches Sud</p><br/>
+              </div>
+            </div>
+            <div class="ligne">
+              <div class="point"></div>
+              <div class="gauche">
+                <p>1996-1997</p><br/>
+              </div>
+              <div class="droite">
+                <p>Réalisation d'armoire électrique</p><br/>
+              </div>
+            </div>
+            <div class="ligne">
+              <div class="point"></div>
+              <div class="gauche">
+                <p>1994-1995</p><br/> 
+              </div>
+              <div class="droite">
+                <p>Monteur machine à traire</p><br/>
+              </div>
+            </div> 
         </article>
         </section>
 
         <!-- Partie recommandation -->
         <section>
-          <div class="recommandation">
-          <img class="logoD" src="images/crayon.png" alt="un crayon" />
-          <h3 class="recom">recommandation</h3>
+          <div class="mainSection">
+          <img class="main__logo" src="images/crayon.png" alt="un crayon" />
+          <h3 class="main__titre">recommandations</h3>
           </div>
           <hr>
-          <article class="recommandation">
-          <div class="bloc_gauche">
-            <p><span>Billot Jean-françois</span></p>
-            <p>Formateur Buroscope</p>  
-            <p>Email : j.billot@buroscope.fr</p>
-          </div>
-          <div class="bloc_droite">
-            <p><span>Pinel Philippe</span></p>
-            <p>Formateur Buroscope</p>
-            <p>Email : p.pinel@buroscope.fr</p>
-          </div>
+          <article class="articleRecommandation">
+            <div class="ligne">
+              <div class="articleRecommandation__gauche">
+                <p><span>Billot Jean-françois</span></p>
+                <p>Formateur Buroscope</p>  
+                <p>Email : j.billot@buroscope.fr</p>
+              </div>
+              <div class="articleRecommandation__droite">
+                <p><span>Pinel Philippe</span></p>
+                <p>Formateur Buroscope</p>
+                <p>Email : p.pinel@buroscope.fr</p>
+              </div>
+            </div>
          </article>
         </section>
       </main>
