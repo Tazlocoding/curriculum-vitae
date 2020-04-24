@@ -3,12 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
-
 .container {
   display: flex;
   justify-content: center;
@@ -19,77 +17,69 @@ h1 {
   text-transform: uppercase;
   font-size: 2.2rem;
 }
-
 .headerFirstName {
   color: rgb(248, 199, 7);
 }
-
 h2 {
   font-size: 1.2rem;
 }
-
 h2 span {
   color: black;
   text-decoration: rgb(248, 199, 7) underline;
   text-underline-position: under;
 }
-
 h3 {
   text-transform: uppercase;
   font-size: 1.1rem;
 }
-
 hr {
   border: none;
   background: rgb(248, 199, 7);
   height: 1px;
   margin: 0 20px;
 }
-
 p {
   font-size: 1rem;
 }
-
+.text {
+  font-size: 0.8rem;
+}
 span {
   font-weight: 700;
 }
-
 .asideSection__color {
   color: rgb(248, 199, 7);
 }
 
 /*left*/
 .asideSectionLeft {
+  position: relative;
   background-color: rgb(248, 199, 7);
-  width: 250px;
+  width: 30%;
 }
-
 .asideSection__photo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
 }
-
 .asideSection__img {
   display: flex;
   height: 200px;
   align-items: center;
   justify-content: center;
 }
-
 .asideSection__titre {
   display: flex;
   width: 100%;
   height: 25px;
   background: rgb(68, 65, 60);
-  color: (248, 199, 7);
+  color: rgb(248, 199, 7);
   justify-content: center;
   align-items: center;
 }
-
 .asideSection__texte,
 .asideSection__contact {
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 .asideSectionLogo {
@@ -97,56 +87,64 @@ span {
   height: 50px;
   border-radius: 50%;
   border: 1px solid rgb(68, 65, 60);
-  margin: 20px 10px;
 }
-
 .asideSection__logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
-
-.asideLeft__section {
-  margin-top: 150px;
+.fa-biking,.fa-hiking{
+  color: rgb(68, 65, 60);
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.asideSection--position {
+  position: absolute;
+  width:100%;
+  bottom: 0;
 }
 
 /*right*/
 header {
   margin: 50px 30px 30px 50px;
 }
-
 .header__img {
   display: none;
 }
-
 .main__logo {
   width: 40px;
   height: 40px;
   margin: 20px 20px 0 30px;
 }
+ .fas {
+    color: rgb(248, 199, 7);
+    font-size: 20px; 
+    margin: 30px 20px 0 50px;
 
+ }
 .ligne {
   display: flex;
   padding: 2px;
+  margin-top: 20px;
 }
-
 .mainSection {
   display: flex;
   margin-top: 40px;
 }
-
 .main__titre {
   margin: 30px 10px 10px 5px;
 }
-
 .point {
   width: 5px;
   height: 5px;
   border-radius: 50%;
   border: 2px solid rgb(248, 199, 7);
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 60px;
 }
-
 .cercle {
   width: 15px;
   height: 15px;
@@ -154,34 +152,32 @@ header {
   border: 1px solid rgb(248, 199, 7);
   margin: -7px;
 }
-
 .gauche {
-  margin: 10px 30px;
+  width: 20%;
+  margin: 10px 40px;
 }
 .droite {
-  margin: 5px;
+  width: 50%;
+  margin: 5px 90px;
 }
-
 .articleExperience,
 .articleFormation {
   margin-top: 30px;
 }
-
 .articleRecommandation__gauche,
 .articleRecommandation__droite {
-  margin: 10px 50px;
+  margin: 10px 75px;
 }
 
 /* Responsive */
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 900px) {
   .container {
     flex-direction: column-reverse;
   }
-
   .asideSectionLeft {
     width: 100%;
   }
-
   .asideSection__img {
     display: none;
   }
@@ -190,7 +186,6 @@ header {
     height: 120px;
     border-radius: 50%;
   }
-
   .header__img {
     display: flex;
     width: 100%;
@@ -200,17 +195,141 @@ header {
     background-color: rgb(248, 199, 7);
   }
   .point {
-    margin: 15px 10px 15px 10px;
+    margin: 15px 10px 15px 40px;
   }
   .gauche {
-    margin: 5px 4px 5px 4px;
+    width: 40%;
+    margin: 10px 40px;
   }
-
   .droite {
-    margin: 5px 15px;
+    width: 50%;
+    margin: 5px 50px;
+  }
+  .asideSection__logo {
+   justify-content: space-around;
+   margin-top: 10px;
+   margin-bottom: 5%;
+  }
+  .asideLeft__section {
+   margin-top: 20px;  
+  }
+  .asideSection__texte,
+  .asideSection__contact {
+    padding: 20px 20px;
+  }
+  .asideSection--position {
+    position: relative;
+    width:100%;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .asideSectionLeft {
+    width: 100%;
+  }
+  .asideSection__img {
+    display: none;
+  }
+  .header__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .header__img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 199, 7);
+  }
+  .point {
+    margin: 15px 5px 15px 20px;
+  }
+  .gauche {
+    width: 40%;
+    margin: 10px 20px;
+  }
+  .droite {
+    width: 50%;
+    margin: 5px 10px;
+  }
+  .asideSection__texte,
+  .asideSection__contact {
+    padding: 10px 10px;
+  }
+  .asideSection__logo {
+   justify-content: space-around;
+  }
+  .asideLeft__section {
+    display:flex;
+    flex-direction: column;
+  }
+  .articleRecommandation__gauche,
+  .articleRecommandation__droite {
+   margin: 10px 5px;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .asideSectionLeft {
+    width: 100%;
+  }
+  .asideSection__img {
+    display: none;
+  }
+  .header__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .header__img {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 199, 7);
+  }
+  .point {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(248, 199, 7);
+    margin-left: 25px;
+  }
+  .cercle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid rgb(248, 199, 7);
+    margin: -7px;
+  }
+  .gauche {
+    margin: 0 0 0 10px;
   }
 
-  .articleRecommandation .ligne {
-    display: block;
+  .articleRecommandation__gauche,
+  .articleRecommandation__droite {
+   align-self: center;
+  }
+  .asideSection__texte,
+  .asideSection__contact {
+   padding: 5px 10px;
+  }
+  .asideLeft__section {
+    margin-top: 30vw;
+  }
+  .asideSection__logo {
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
   }
 }
