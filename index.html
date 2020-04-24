@@ -6,7 +6,7 @@
     <!-- Open Graph data -->
     <meta property="og:title" content="Mon cv" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:url" content="https://tazlocoding.github.io/curriculum-vitae" />
     <meta property="og:image" content="http://example.com/profil.jpg" />
     <meta property="og:description" content="Présentation de mon parcour par mon cv et de mon avenir professionnel" />
     <!-- Twitter Card data -->
@@ -14,6 +14,7 @@
     <meta name="twitter:description" content="Présentation de mon parcour et de mon avenir professionnel"/>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41790c10cc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Daucé laurent</title>
   </head>
@@ -22,8 +23,9 @@
       <!-- Partie gauche -->
       <aside class="asideSectionLeft">
         <!-- Partie photo -->
-        <section class="asideSection__img">
-          <img class="asideSection__photo" src="images/profil.jpg" alt="profil" />
+        <section>
+          <h4 class="asideSection__img">
+          <img class="asideSection__photo" src="images/profil.jpg" alt="profil"/></h4>
         </section>
         <!-- Partie contact -->
         <section >
@@ -44,24 +46,21 @@
         </section>
         <!-- Partie A propos -->
         <section>
-          <h3 class="asideSection__titre  asideSection__color">à propos de moi</h3>
+          <h3 class="asideSection__titre  asideSection__color ">à propos de moi</h3>
           <div class="asideSection__texte">
-          <p>
-            En reconversion professionnelle, je me dirige vers le développement
-            web. Actuellement je me forme avec OpenClasrooms pour apprendre le métier.
-            Ayant suivi une formation découverte en Développemnt d'Application Hybride d'une durée de 5 mois.
-             Motivé à l'idée de rejoindre une structure de taille humaine, je
-            suis à la recherche d'expérience qui me permettrai de mettre en
+          <p>En reconversion professionnelle, je me dirige vers le développement web. Je me forme avec OpenClasrooms pour apprendre le métier.
+            Ayant suivi une formation découverte en développement d'Applications Hybride d'une durée de 5 mois, et motivé par l'idée de rejoindre une structure à taille humaine.
+            Je suis à la recherche d'expériences qui me permettront de mettre en
             avant mes connaissances et surtout d'apprendre.
           </p>
         </div>
         </section>
         <!-- Partie loisirs -->
-        <section class="asideLeft__section">
+        <section class="asideLeft__section asideSection--position">
           <h3 class="asideSection__titre  asideSection__color">loisirs</h3>
           <div class="asideSection__logo">
-              <img class="asideSectionLogo" src="images/velo.png" alt="un cycliste" />
-              <img class="asideSectionLogo" src="images/walking.png" alt="un marcheur" />
+              <i class="asideSectionLogo fa fa-biking "></i>
+              <i class="asideSectionLogo fa fa-hiking"></i>
               <img class="asideSectionLogo" src="images/jardinage.png" alt="un jardinier"/>
           </div>
         </section>
@@ -70,8 +69,9 @@
       <!-- Partie droite -->
       <main class="right">
         <!-- Nom et métier -->
-        <section class="header__img">
-          <img class="header__photo" src="images/profil.jpg" alt="profil" />
+        <section>
+          <h4 class="header__img">
+          <img class="header__photo" src="images/profil.jpg" alt="profil" /></h4>
         </section>
         <header >
           <h1><span class="headerFirstName">laurent</span> daucé</h1>
@@ -80,13 +80,11 @@
         <!-- Partie formation -->
         <section>
           <div class="mainSection">
-          <img class="main__logo" src="images/formation.png" alt="formation" />
+          <i class="fas fa-graduation-cap"></i>
           <h3 class="main__titre">formation</h3>
         </div>
           <hr>
-        
-         <article class="articleFormation">
-
+    
           <div class="ligne">
             <div class="point">
               <div class="cercle"></div>
@@ -95,7 +93,9 @@
               <p>2020<br/> A distance</p>
             </div>
             <div class="droite">
-              <p><span>OpenClassrooms</span><br/> Développement web</p>
+              <p><span>OpenClassrooms</span><br/> Développement web</p><br/>
+              <p class="text">Apprentissage de langages informatique pour la création de site web personnalisé, des outils de versionning que sont Git et GitHub.
+                Utile pour une production individuel et qui le deviendra encore plus pour un travail en équipe.</p>
             </div>
           </div>
           <div class="ligne">
@@ -104,25 +104,29 @@
               <p>2019-2020<br/>Rennes</p>
             </div>
             <div class="droite">
-              <p><span>Buroscope</span><br/> Développement d'Application Hybride</p>
+              <p><span>Buroscope</span><br/> Développement d'Application Hybride</p><br/>
+              <p class="text">Découverte du langage Javascript et de bibliothèques, telle que React JS et React Native, avec comme 
+                objectif une formation diplomante.</p>
             </div>
           </div>
           <div class="ligne">
             <div class="point"></div>
             <div class="gauche">
-              <p>2019<br/>Fougéres&ensp;</p>
+              <p>2019<br/>Fougéres</p>
             </div>
             <div class="droite">
-              <p><span>CLPS</span><br/> Prestation AGEFIPH Objectif Reconversion</p>
+              <p><span>CLPS</span><br/> Prestation AGEFIPH Objectif Reconversion</p><br/>
+              <p class="text">En vu d'une reconversion professionnelle, optimisation du CV, recherches d'opportunités profesionnelles,élaboration de lettre de motivation et simulation d'entretien d'embauche  </p>
             </div>
           </div>
           <div class="ligne">
             <div class="point"></div>
             <div class="gauche">
-              <p>2018<br/>Hamelin&ensp;&ensp;</p>
+              <p>2018<br/>Hamelin</p>
             </div>
             <div class="droite">
-              <p><span>Minoterie des Bois Olives</span><br/> Stage Secrétaire-comptable</p>
+              <p><span>Minoterie des Bois Olives</span><br/> Stage Secrétaire-comptable</p><br/>
+              <p class="text">Objectif de reconversion au seins de l'entreprise, appel téléphonique auprès des clients, decouverte de facturation, gestion des stocks.</p>
             </div>
           </div>
           <div class="ligne">
@@ -131,7 +135,8 @@
               <p>2009<br/>St Quentin</p>
             </div>
             <div class="droite">
-              <p><span>CQP</span> Conducteur de Moulin</p>
+              <p><span>CQP</span><br/> Conducteur de Moulin</p><br/>
+              <p class="text">Gerer les reglages, l'entretien et anticiper les pannes des machines , gestion des planning de l'équipe, </p>
             </div>
           </div>
           <div class="ligne">
@@ -140,19 +145,20 @@
               <p>1994<br/> Cherbourg</p>
             </div>
             <div class="droite">
-              <p><span>Bac Pro EIE</span> (Equipement et installation Electrique)</p>
+              <p><span>Bac Pro EIE</span><br/> (Equipement et installation Electrique)</p><br/>
+              <p class="text">Diplôme Obtenu</p>
             </div>
           </div>
-        </article>
+        
         </section >
         <!-- Partie ex pro -->
         <section>
           <div class="mainSection">
-          <img class="main__logo" src="images/expérience.png" alt="expérience" />
+          <i class="fas fa-briefcase"></i>
           <h3 class="main__titre">expérience professionnelle</h3>
           </div>
           <hr>
-          <article class="articleExperience">
+         
             <div class="ligne">
               <div class="point">
                 <div class="cercle"></div>
@@ -161,7 +167,9 @@
                 <p>1998-2018</p><br/>
               </div>
               <div class="droite">
-                <p>Chef Meunier Minoterie des Bois Olives</p><br/> 
+                <p><span>Chef Meunier Minoterie des Bois Olives</span></p><br/>
+                <p class="text">Gérer les commandes de matières premières, de la transformation à la production et
+                  jusqu'au chargement dans les camions </p>
               </div>
             </div>
             <div class="ligne">
@@ -171,6 +179,7 @@
               </div>
               <div class="droite">
                 <p>Syndicat Eaux potable Avranches Sud</p><br/>
+                <p class="text">Suivi de la prise d'eau en rivière et traité pour devenir de l'eau potable</p>
               </div>
             </div>
             <div class="ligne">
@@ -180,6 +189,7 @@
               </div>
               <div class="droite">
                 <p>Réalisation d'armoire électrique</p><br/>
+                <p class="text">Création d'armoire pour raclette à lisier installer chez les agriculteurs</p>
               </div>
             </div>
             <div class="ligne">
@@ -189,19 +199,20 @@
               </div>
               <div class="droite">
                 <p>Monteur machine à traire</p><br/>
+                <p class="text">Installation pour la traite des vaches dans de petites et très grandes fermes</p>
               </div>
             </div> 
-        </article>
+       
         </section>
 
         <!-- Partie recommandation -->
         <section>
           <div class="mainSection">
-          <img class="main__logo" src="images/crayon.png" alt="un crayon" />
+          <i class="fas fa-pen"></i>
           <h3 class="main__titre">recommandations</h3>
           </div>
           <hr>
-          <article class="articleRecommandation">
+         
             <div class="ligne">
               <div class="articleRecommandation__gauche">
                 <p><span>Billot Jean-françois</span></p>
@@ -214,7 +225,7 @@
                 <p>Email : p.pinel@buroscope.fr</p>
               </div>
             </div>
-         </article>
+         
         </section>
       </main>
     </div>
