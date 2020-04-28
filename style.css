@@ -275,7 +275,7 @@ header {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   .container {
     flex-direction: column-reverse;
   }
@@ -303,7 +303,7 @@ header {
     height: 5px;
     border-radius: 50%;
     border: 2px solid rgb(248, 199, 7);
-    margin-left: 25px;
+    margin-left: 15px;
   }
   .cercle {
     width: 15px;
@@ -314,6 +314,14 @@ header {
   }
   .gauche {
     margin: 0 0 0 10px;
+  }
+  .gauche {
+    width: 40%;
+    margin: 10px 0px 10px 10px;
+  }
+  .droite {
+    width: 50%;
+    margin: 5px;
   }
 
   .articleRecommandation__gauche,
