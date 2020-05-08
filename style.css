@@ -6,12 +6,32 @@
 body {
   margin: auto;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
-.container {
+.header{
   display: flex;
   justify-content: center;
+  width: 100%; 
 }
-
+.header__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 250px;
+  background-color: rgb(248, 199, 7);
+}
+.asideSection__photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.header__titre {
+  width: 70%;
+  padding: 0 35px;
+  margin-top: 6%;
+}
 /* typographies*/
 h1 {
   text-transform: uppercase;
@@ -47,26 +67,17 @@ p {
 span {
   font-weight: 700;
 }
+.container {
+  display: flex;
+}
 .asideSection__color {
   color: rgb(248, 199, 7);
 }
-
 /*left*/
 .asideSectionLeft {
   position: relative;
   background-color: rgb(248, 199, 7);
   width: 30%;
-}
-.asideSection__photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
-.asideSection__img {
-  display: flex;
-  height: 200px;
-  align-items: center;
-  justify-content: center;
 }
 .asideSection__titre {
   display: flex;
@@ -81,7 +92,6 @@ span {
 .asideSection__contact {
   padding: 20px 20px;
 }
-
 .asideSectionLogo {
   width: 50px;
   height: 50px;
@@ -91,8 +101,8 @@ span {
 .asideSection__logo {
   display: flex;
   justify-content: space-around;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .fa-biking,.fa-hiking{
   color: rgb(68, 65, 60);
@@ -101,29 +111,19 @@ span {
   justify-content: center;
   align-items: center;
 }
-.asideSection--position {
+.asideSection__position {
   position: absolute;
   width:100%;
   bottom: 0;
 }
-
 /*right*/
-header {
-  margin: 50px 30px 30px 50px;
+.sectionRight {
+  width: 70%;
 }
-.header__img {
-  display: none;
-}
-.main__logo {
-  width: 40px;
-  height: 40px;
-  margin: 20px 20px 0 30px;
-}
- .fas {
-    color: rgb(248, 199, 7);
-    font-size: 20px; 
-    margin: 30px 20px 0 50px;
-
+.fas {
+  color: rgb(248, 199, 7);
+  font-size: 20px; 
+  margin: 0 20px 0 50px;
  }
 .ligne {
   display: flex;
@@ -132,10 +132,13 @@ header {
 }
 .mainSection {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .main__titre {
-  margin: 30px 10px 10px 5px;
+  margin: 0 10px 10px 5px;
+}
+.section__pro {
+  margin-top: 40px;
 }
 .point {
   width: 5px;
@@ -168,18 +171,11 @@ header {
 .articleRecommandation__droite {
   margin: 10px 75px;
 }
-
 /* Responsive */
 
 @media screen and (max-width: 900px) {
-  .container {
-    flex-direction: column-reverse;
-  }
-  .asideSectionLeft {
-    width: 100%;
-  }
-  .asideSection__img {
-    display: none;
+  .header{
+    flex-direction: column;
   }
   .header__photo {
     width: 120px;
@@ -194,16 +190,31 @@ header {
     justify-content: center;
     background-color: rgb(248, 199, 7);
   }
+  .header__titre {
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  .asideSectionLeft {
+    width: 100%;
+  }
+ 
   .point {
-    margin: 15px 10px 15px 40px;
+    margin: 15px 10px 15px 60px;
   }
   .gauche {
     width: 40%;
-    margin: 10px 40px;
+    margin: 10px 50px;
   }
+  .sectionRight {
+    width: 100%;
+  }
+  
   .droite {
     width: 50%;
-    margin: 5px 50px;
+    margin: 5px 80px;
   }
   .asideSection__logo {
    justify-content: space-around;
@@ -217,11 +228,15 @@ header {
   .asideSection__contact {
     padding: 20px 20px;
   }
-  .asideSection--position {
+  .asideSection__position { 
     position: relative;
     width:100%;
     bottom: 0;
   }
+  .mainSection {
+     align-items: center;
+  }
+
 }
 @media screen and (max-width: 500px) {
   .container {
@@ -229,9 +244,6 @@ header {
   }
   .asideSectionLeft {
     width: 100%;
-  }
-  .asideSection__img {
-    display: none;
   }
   .header__photo {
     width: 120px;
@@ -323,7 +335,6 @@ header {
     width: 50%;
     margin: 5px;
   }
-
   .articleRecommandation__gauche,
   .articleRecommandation__droite {
    align-self: center;
@@ -341,3 +352,4 @@ header {
     margin: 2%;
   }
 }
+
